@@ -1,28 +1,32 @@
+import Container from '../../shared/container';
+import ShoppingCart from './shoppingCart';
+import MobileMenu from './mobileMenu';
+import Navbar from './navbar';
 import SearchBox from './searchBox';
 import ThemeToggle from './themeToggle';
-import { HeaderBar, Inner, Logo, LogoIcon, LogoText } from './style';
-import { HiMiniShoppingBag } from "react-icons/hi2";
-import Navbar from './navbar';
+import { HeaderBar, Row, Start, Actions, DesktopOnly, Logo } from './style';
 
 export default function Header() {
   return (
     <HeaderBar>
-      <Inner>
-        <Logo>
-          <LogoIcon>
-            <HiMiniShoppingBag />
-          </LogoIcon>
-          <LogoText>
-            NOVA
-          </LogoText>
-        </Logo>
-        
-        <Navbar />
+      <Container>
+        <Row>
+          <Start>
+            <MobileMenu />
+            <Logo href="/">NOVA</Logo>
+          </Start>
 
-        <SearchBox />
+          <Navbar />
 
-        <ThemeToggle />
-      </Inner>
+          <Actions>
+            <DesktopOnly>
+              <SearchBox />
+            </DesktopOnly>
+            <ThemeToggle />
+            <ShoppingCart/>
+          </Actions>
+        </Row>
+      </Container>
     </HeaderBar>
   );
 }
