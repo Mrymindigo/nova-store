@@ -7,6 +7,12 @@ export const en = {
     header: {
         theme: { toDark: 'Switch to dark mode', toLight: 'Switch to light mode' },
         search: { placeholder: 'Search products...', label: 'Search' },
+        nav: {
+            label: 'Main navigation',
+            home: 'Home',
+            categories: 'Categories',
+            products: 'Products',
+        },
     },
 };
 
