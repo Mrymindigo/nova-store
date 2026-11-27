@@ -8,5 +8,6 @@ export const fa: Dictionary = {
     },
     header: {
         theme: { toDark: 'تغییر به حالت تیره', toLight: 'تغییر به حالت روشن' },
+        search: { placeholder: 'جستجو در محصولات...', label: 'جستجو' },
     },
 };

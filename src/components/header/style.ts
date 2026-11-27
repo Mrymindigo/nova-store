@@ -18,8 +18,24 @@ export const Inner = styled.div`
   padding: 1rem;
 `;
 
-export const Logo = styled(Link)`
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: ${({ theme }) => theme.colors.primary};
-`;
+export const Logo = styled.div`
+display:flex;
+gap:.5rem;
+justify-content:center;
+align-items:center;
+`
+
+export const LogoIcon = styled.span`
+font-size:24px;
+color:${({ theme }) => theme.colors.accent};
+display:flex;
+justify-content:center;
+align-items:center;
+padding-bottom: .65rem;
+`
+export const LogoText = styled.h1`
+display:flex;
+justify-content:center;
+align-items:center;
+margin: auto;
+color:${({ theme }) => theme.colors.primary};`
