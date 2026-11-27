@@ -18,4 +18,9 @@ export const fa: Dictionary = {
         menu: { title: 'منو', open: 'باز کردن منو', close: 'بستن منو' },
         cart: { label: 'سبد خرید، {count} کالا' },
     },
+    hero: {
+        title: "انتخاب هوشمندانه، خرید آسان",
+        description: "با نوا، تجربه خریدی متفاوت را تجربه کنید",
+        cta: "مشاهده محصولات",
+    },
 };

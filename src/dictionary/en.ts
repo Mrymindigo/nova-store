@@ -16,6 +16,13 @@ export const en = {
         menu: { title: 'Menu', open: 'Open menu', close: 'Close menu' },
         cart: { label: 'Shopping cart, {count} items' },
     },
+
+    hero: {
+        title: "Smart Choices, Easy Shopping",
+        description: "Enjoy a different shopping experience with Nova",
+        cta: "Explore Products",
+    },
+
 };
 
 export type Dictionary = typeof en;
