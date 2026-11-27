@@ -13,6 +13,8 @@ export const en = {
             categories: 'Categories',
             products: 'Products',
         },
+        menu: { title: 'Menu', open: 'Open menu', close: 'Close menu' },
+        cart: { label: 'Shopping cart, {count} items' },
     },
 };
 

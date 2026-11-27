@@ -4,7 +4,8 @@ import MobileMenu from './mobileMenu';
 import Navbar from './navbar';
 import SearchBox from './searchBox';
 import ThemeToggle from './themeToggle';
-import { HeaderBar, Row, Start, Actions, DesktopOnly, Logo } from './style';
+import { HiMiniShoppingBag } from "react-icons/hi2";
+import { HeaderBar, Row, Start, Actions, DesktopOnly, Logo, LogoIcon, LogoText } from './style';
 
 export default function Header() {
   return (
@@ -13,17 +14,22 @@ export default function Header() {
         <Row>
           <Start>
             <MobileMenu />
-            <Logo href="/">NOVA</Logo>
+            <Logo href="/">
+              <LogoIcon>
+                <HiMiniShoppingBag />
+              </LogoIcon>
+              <LogoText>
+                NOVA
+              </LogoText>
+            </Logo>
           </Start>
-
           <Navbar />
-
           <Actions>
             <DesktopOnly>
               <SearchBox />
             </DesktopOnly>
             <ThemeToggle />
-            <ShoppingCart/>
+            <ShoppingCart />
           </Actions>
         </Row>
       </Container>

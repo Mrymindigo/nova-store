@@ -36,8 +36,27 @@ export const DesktopOnly = styled.div`
   }
 `;
 
+
 export const Logo = styled(Link)`
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: ${({ theme }) => theme.colors.primary};
-`;
+display:flex;
+gap:.5rem;
+justify-content:center;
+align-items:center;
+`
+
+export const LogoIcon = styled.span`
+font-size:24px;
+color:${({ theme }) => theme.colors.accent};
+display:flex;
+justify-content:center;
+align-items:center;
+padding-bottom:.65rem;
+`
+export const LogoText = styled.h1`
+display:flex;
+justify-content:center;
+align-items:center;
+font-size: 1.5rem;
+font-weight: 800;
+margin: auto;
+color:${({ theme }) => theme.colors.primary};`

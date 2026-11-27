@@ -15,5 +15,7 @@ export const fa: Dictionary = {
             categories: 'دسته‌بندی‌ها',
             products: 'محصولات',
         },
+        menu: { title: 'منو', open: 'باز کردن منو', close: 'بستن منو' },
+        cart: { label: 'سبد خرید، {count} کالا' },
     },
 };
