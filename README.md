@@ -203,4 +203,10 @@ day2: 8 houurs
 
 ## Screenshots
 
-To be added
+| Desktop (FA, light) | Desktop (EN, dark) |
+|---|---|
+| ![Home desktop FA](docs//home-desktop-fa-light.png) | ![Home desktop EN](docs/home-desktop-fa-dark.png) | ![Home desktop EN](docs/home-desktop-en-light.png)|
+
+| Mobile | Mobile menu |
+|---|---|
+| ![Home mobile](docs//home-mobile-fa-light.png) | ![Mobile menu](docs/mobile-menu.png) |
