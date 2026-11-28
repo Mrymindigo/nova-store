@@ -5,7 +5,7 @@
 NOVA Store is the customer-facing website of a small online shop. It is built with
 Next.js (App Router) and TypeScript. Products come from the public
 [FakeStoreAPI](https://fakestoreapi.com). This is the second project of a frontend
-technical challenge. The first one is **NOVA Admin**: `<link-to-nova-admin-repo>`.
+technical challenge. The first one is **NOVA Admin**: `<https://github.com/Mrymindigo/nova-admin>`.
 
 **Status:** the main page is working. The shopping cart, the footer content and some
 SEO files are not finished. See [What is not finished](#what-is-not-finished) and
@@ -67,7 +67,7 @@ Axios · React Context (theme) · react-icons
 ### Install and run
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/Mrymindigo/nova-store
 cd nova-store
 cp .env.example .env
 npm install
