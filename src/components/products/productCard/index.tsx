@@ -2,7 +2,8 @@ import { useFormatter, useTranslations } from 'next-intl';
 import { LuStar } from 'react-icons/lu';
 import AddToCartButton from '../addToCartButton';
 import type { Product } from '../../../types/product';
-import {Card,ImageBox,ProductImage,Body,Category,Title,Rating,Price,Footer,} from './style';
+import { getCategoryKey } from '../../../utils/categoryKeys';
+import { Card, ImageBox, ProductImage, Body, Category, Title, Rating, Price, Footer, } from './style';
 
 interface ProductCardProps {
     product: Product;
@@ -16,6 +17,11 @@ export default function ProductCard({ product }: ProductCardProps) {
     const rate = format.number(product.rating.rate, { maximumFractionDigits: 1 });
     const count = format.number(product.rating.count);
 
+
+    const tCategories = useTranslations('categories');
+    const categoryKey = getCategoryKey(product.category);
+    const categoryLabel = categoryKey ? tCategories(categoryKey) : product.category;
+
     return (
         <Card>
             <ImageBox>
@@ -28,7 +34,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             </ImageBox>
 
             <Body>
-                <Category>{product.category}</Category>
+                <Category>{categoryLabel}</Category>
                 <Title>{product.title}</Title>
 
                 <Rating
