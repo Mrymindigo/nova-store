@@ -48,7 +48,7 @@ export default function MobileMenu() {
                     </CloseButton>
                 </PanelHeader>
 
-                <SearchBox />
+                <SearchBox onSearch={closeMenu} />
 
                 <nav aria-label={t('nav.label')}>
                     <MenuList>

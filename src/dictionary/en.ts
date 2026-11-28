@@ -22,7 +22,42 @@ export const en = {
         description: "Enjoy a different shopping experience with Nova",
         cta: "Explore Products",
     },
-
+    product: {
+        addToCart: 'Add to cart',
+        rating: 'Rating {rate, number} out of 5 from {count, number} reviews',
+    },
+    categories: {
+        electronics: 'Electronics',
+        jewelery: 'Jewelry',
+        mensClothing: "Men's clothing",
+        womensClothing: "Women's clothing",
+    },
+    categorySection: { title: 'Categories' },
+    productsSection: {
+        title: 'Featured products',
+        loading: 'Loading products',
+        empty: 'No products available right now',
+        noResults: 'No products match your search or filters',
+        error: 'Could not load products. Please try again.',
+        retry: 'Try again',
+        filters: {
+            category: 'Category',
+            allCategories: 'All categories',
+            sort: 'Sort by',
+        },
+        sort: {
+            default: 'Default',
+            priceAsc: 'Price: low to high',
+            priceDesc: 'Price: high to low',
+            titleAsc: 'Title: A to Z',
+        },
+        pagination: {
+            label: 'Products pages',
+            previous: 'Previous page',
+            next: 'Next page',
+            page: 'Page {page, number}',
+        },
+    },
 };
 
 export type Dictionary = typeof en;

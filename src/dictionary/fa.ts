@@ -23,4 +23,40 @@ export const fa: Dictionary = {
         description: "با نوا، تجربه خریدی متفاوت را تجربه کنید",
         cta: "مشاهده محصولات",
     },
+    product: {
+        addToCart: 'افزودن به سبد',
+        rating: 'امتیاز {rate, number} از ۵ از {count, number} نظر',
+    },
+    categories: {
+        electronics: 'کالای دیجیتال',
+        jewelery: 'زیورآلات',
+        mensClothing: 'پوشاک مردانه',
+        womensClothing: 'پوشاک زنانه',
+    },
+    categorySection: { title: 'دسته‌بندی‌ها' },
+    productsSection: {
+        title: 'محصولات منتخب',
+        loading: 'در حال بارگذاری محصولات',
+        empty: 'در حال حاضر محصولی موجود نیست',
+        noResults: 'محصولی با این جستجو یا فیلتر پیدا نشد',
+        error: 'دریافت محصولات انجام نشد. دوباره تلاش کنید.',
+        retry: 'تلاش مجدد',
+        filters: {
+            category: 'دسته‌بندی',
+            allCategories: 'همه دسته‌بندی‌ها',
+            sort: 'مرتب‌سازی بر اساس',
+        },
+        sort: {
+            default: 'پیش‌فرض',
+            priceAsc: 'قیمت: کم به زیاد',
+            priceDesc: 'قیمت: زیاد به کم',
+            titleAsc: 'عنوان: الف تا ی',
+        },
+        pagination: {
+            label: 'صفحه‌های محصولات',
+            previous: 'صفحه قبل',
+            next: 'صفحه بعد',
+            page: 'صفحه {page, number}',
+        },
+    },
 };
